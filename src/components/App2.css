@@ -33,6 +33,7 @@ form {
   flex-wrap: wrap;
 }
 
+
 h1 {
   text-align: center;
   width: 100%;
@@ -69,48 +70,53 @@ input.error {
 .errorMessage {
   color: red;
   font-size: 0.75em;
-  display: relative;
+  
 }
 
 .firstName {
-  margin-right: 1%;
+  margin-right: 0%;
+  margin-left: 1%;
 }
 
 .lastName {
+  margin-right: 1%;
   margin-left: 0%;
 }
 
-
+.firstName,
+.lastName,
 .email,
-.mobilePhone,
-.note {
-  display: flex;
+.note,
+.mobilePhone {
+  font-style: italic;
+  font-size: 25px;
   flex-direction: column;
   margin-bottom: 15px;
 }
 
-
 .firstName,
 .lastName {
-  width: 90%;
-  height: 1%;
+  width: 49%;
+  height: 15%;
 }
 
 .email,
-.mobilePhone,
-.note {
+.note,
+.mobilePhone {
   width: 100%;
+  height: 15%;
 }
 
 
-.saveUser{
+
+
+.submit {
   width: 100%;
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.saveUser button {
+.submit button {
   background-color: #519e8a;
   color: #fff;
   border: 2px solid #fff;
@@ -123,22 +129,21 @@ input.error {
   margin-bottom: 0.25em;
 }
 
-.saveUser button:hover {
+.submit button:hover {
   color: #519e8a;
   background-color: #fff;
   border: 2px solid #519e8a;
 }
 
-.saveUsert small {
+.submit small {
   color: #999;
   font-weight: lighter;
 }
 
 
-
 .cancel{
   width: 100%;
-  display: flex;
+ 
   flex-direction: column;
   align-items: center;
 }
@@ -166,3 +171,77 @@ input.error {
   color: #999;
   font-weight: lighter;
 }
+
+.back{
+  width: 10%;
+  
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.back button {
+  background-color: #5268e6;
+  color: #fff;
+  border: 2px solid #fff;
+  width: 100%;
+  margin-top: 1em;
+  padding: 8px 0px;
+  font-size: 1em;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  margin-bottom: 0.25em;
+}
+
+.back button:hover {
+  color: #000303;
+  background-color: rgb(107, 93, 93);
+  border: 2px solid #519e8a;
+}
+
+.back small {
+  color: #999;
+  font-weight: lighter;
+}
+
+
+.back2{
+  width: 100%;
+  
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.back2 button {
+  background-color: #000000;
+  color: #fff;
+  border: 2px solid #fff;
+  width: 100%;
+  margin-top: 1em;
+  padding: 8px 0px;
+  font-size: 1em;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  margin-bottom: 0.25em;
+}
+
+.back2 button:hover {
+  color: #000303;
+  background-color: rgb(107, 93, 93);
+  border: 2px solid #3f1899;
+}
+
+.back2 small {
+  color: #999;
+  font-weight: lighter;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  resize: none;  
+ }
